@@ -2,47 +2,69 @@
 <html>
 <head>
 <title>MayMay CraZay</title>
-    <link rel = "stylesheet" href = "style.css">
-     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src = "https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src = "https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-   $( function() {
-    $( "#accordion" ).accordion({
-      collapsible: true
-    });
-  } );
-    </script>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/style.css" />
+    
+<!-- js -->
+<script src="js/jquery-1.9.1.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $( '.dropdown' ).hover(
+            function(){
+                $(this).children('.sub-menu').slideDown(200);
+            },
+            function(){
+                $(this).children('.sub-menu').slideUp(200);
+            }
+        );
+    }); // end ready
+</script>
     </head>
     <body>
+
         <header>
-            Meme Finder : Find the dankest of memes
-        </header>
-        <div id = "accordion">
-           <h3>Categories</h3>
-            <div>
-                <p>Reactions</p>
-                <li>Roast</li>
-                <li>Relatable</li>
-                <li>2meirl4meirl</li>
-                <li>DeepFried</li>
+           <h1><img class = "bino" src="img/binoculars.png">&nbsp;&nbsp;&nbsp;Meme Finder</h1>            
+       
+ 
+       <nav>
+           <ul>
+               <li><a href="#">Submit</a></li>
+               <li><a href="#">Random</a></li>
+               <li class="dropdown">
+                   <a href="#">Categories</a>
+                   <ul class="sub-menu">
+                       <li><a href="#">Nav 3.1</a></li>
+                        <li><a href="#">Nav 3.4</a></li> 
+                       <li><a href="#">Nav 3.5</a></li>
+                   </ul>
+               </li>
+            
+           </ul>
+       </nav>  
+ </header>
+    <script type="text/javascript">
+       $(document).ready(function() {
+    $( '.dropdown' ).hover(
+        function(){
+            $(this).children('.sub-menu').slideDown(200);
+        },
+        function(){
+            $(this).children('.sub-menu').slideUp(200);
+        }
+    );
+}); // end ready
+    </script>
+        <div id = "testimony">
+            <h3>"MemeFinder has the <i> dankest </i> memes on the internet"</h3>
+            <h4>&nbsp;- Harambe, meme connoisseur</h4>
+               
             </div>
-                
-                     
-                 
-              
-     
-        
-                  
-        </div>
-        <ul class = "random">
-            <li class = "rand">Random</li>
-        </ul>
-        <div class = "overlay">
-            <div id = "main">
-                <input type = "text" name = "search" placeholder= "Search 4 Dank">
-            </div>
-            </div>
+           <input id = "search" type = "text" name = "search" placeholder= "Search 4 Dank">
+            
         <footer>
         </footer>
     </body>

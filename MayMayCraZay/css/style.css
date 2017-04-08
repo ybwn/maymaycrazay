@@ -1,0 +1,128 @@
+/* =Styles for the lab
+-------------------------------------------------------------- */
+
+header {
+   background-color: #263238;
+    width:100%;
+    padding:1%;
+    
+}
+#wrapper {
+	min-width:1000px;
+}
+.bino{
+    width: 4%;
+    min-width: 64px;
+    vertical-align: -75%;
+    margin-top: -5%;
+    padding-bottom: 0.5%;
+  
+}
+nav {
+
+	padding:10px 0;
+    margin-top: -5%;
+}
+nav ul {
+    list-style-type:none;
+    margin-left:70%;
+  
+    padding:0;
+}
+nav ul li {
+    display:inline-block;
+    position:relative;
+}
+
+/* sub navigation */
+nav li ul {    
+    background-color:#FB7D5E;
+    position:absolute;
+    left:0;
+    top:40px; /* make this equal to the line-height of the links (specified below) */
+    width:200px;
+}
+nav li li {
+    position:relative;
+    margin:0;
+    display:block;
+}
+nav li li ul {
+    position:absolute;
+    top:0;
+    left:200px; /* make this equal to the width of the sub nav above */
+    margin:0;
+}
+
+/* style all links */
+nav a {
+    line-height:40px;
+    padding:0 12px;
+    margin:0 12px;
+}
+nav a {
+    color:#fff;
+    text-decoration:none;
+    display:block;
+}
+nav a:hover,
+nav a:focus,
+nav a:active {
+    color:#ccc;
+}
+
+/* style sub level links */
+nav li li a {
+    border-bottom:solid 1px #FB7D5E;
+    margin:0 10px;
+    padding:0;
+}
+nav li li:last-child a {
+    border-bottom:none;
+}
+
+/* hide sub menu links */
+ul.sub-menu {
+    display:none;
+}
+
+
+/* show arrows for dropdowns */
+nav li.dropdown > a {
+    background-image:url('../img/arrow-down.png');
+    background-position:right 20px;
+    background-repeat:no-repeat;
+}
+
+nav li li.dropdown > a {
+    background-image:url('../img/arrow-right.png');
+    background-position:right 16px;
+    background-repeat:no-repeat;
+}
+
+#testimony{
+    width: 60%;
+   margin-left: 20%;
+    margin-top: 5%;
+}
+#testimony h3{
+    color:#fff;
+    font-size: 4em;
+}
+#testimony h4{
+    color:#fff;
+    font-size: 3em;
+    font-weight: lighter;
+}
+
+
+#search {
+  padding: 0 5%;
+  font-size: 18px;
+  width: 60%;
+    margin-left:20%;
+    margin-top:3%;
+  height: 60px;
+  border: 1px solid #b3b3b3;
+  border-radius: 20px 20px 20px 20px;
+}
